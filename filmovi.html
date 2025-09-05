@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmska Biblioteka po Žanrovima</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stilovi.css">
+    <link rel="stylesheet" href="stiloviFilmovi.css">
+    
+</head>
+<body>
+   
+     <!-- ZAGLAVLJE -->
+    <header class="zaglavlje">
+        <div class="kontejner-zaglavlja">
+            <div class="logo">
+                <div class="logo-ikona">
+                    <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan">
+                </div>
+                <div class="logo-tekst">KinoIstorija</div>
+            </div>
+            
+            <nav>
+                <ul class="glavni-meni">
+                    <li><a href="index.html">Početna  </a></li>
+                    
+                    <li class="padajuci-meni"><a href="filmovi.html">Filmovi</a>
+                    <div class="sadrzaj-padajuceg">
+                            <a href="#komedija">Komedija</a>
+                            <a href="#drama">Drama</a>
+                            <a href="#akcija">Akcija</a>
+                            
+                        </div></li>
+                    
+                    
+                    <li><a href="o_nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><div class="meni-pristupacnosti">
+                <button class="dugme-pristupacnosti" id="dugme-tema" title="Promeni temu">
+                    <img class="mesec-obican" id="mesec-obican" src="slike/mesec_obican.JPG">
+                    <img class="sunce-obicno" id="sunce-obicno" src="slike/sunce_obicno.JPG">
+                </button>
+                <button class="dugme-pristupacnosti" id="mali-font" title="Manji font">A-</button>
+                <button class="dugme-pristupacnosti" id="srednji-font" title="Srednji font">A</button>
+                <button class="dugme-pristupacnosti" id="veliki-font" title="Veći font">A+</button>
+            </div></li>
+                </ul>
+
+
+                
+            </nav>
+            
+            
+            
+            <div class="hamburger-meni">
+                <img class="hamburger-obican" id="hamburger-obican" src="slike/hamburger_obican.JPG">
+                <img class="izlaz-obican" id="izlaz-obican" src="slike/izlaz_obican.JPG">
+            </div>
+        </div>
+    </header>
+
+    <!-- NASLOV STRANE -->
+    <section class="naslov">
+        <h1>Filmska Biblioteka po Žanrovima</h1>
+        <p>Otkrijte najbolje domaće filmove organizovane po žanrovima sa kratkim opisima i informacijama</p>
+    </section>
+
+    <!-- GLAVNI SADRŽAJ -->
+    <main class="zanrovi-sekcija">
+        <!-- KOMEDIJA -->
+        <section class="zanr" id="komedija">
+            <div class="zanr-naslov">
+                <div class="zanr-ikona">
+                    <img src="slike/komedija.JPG" alt="komedija" id="komedija_ikonica">
+                </div>
+                <h2>Komedija</h2>
+            </div>
+            
+            <div class="filmovi-kontejner">
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/ko_to_tamo2.jpg');  filter: blur(2px);"   >
+                        <span class="film-godina">1980</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Ko to tamo peva</h3>
+                        <p class="film-reziser">Režija: Slobodan Šijan</p>
+                        <p class="film-opis">Putovanje autobusa Beograd-Zemun 5. aprila 1941. godine, dan pred početak Drugog svetskog rata. Različiti putnici sa različitim životnim pričama dele svoje trenutke dok se suočavaju sa neizvesnošću rata.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Muzička komedija</span>
+                            <span class="film-tag">Istorijski</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/maratonci2.jpg');filter: contrast(200%);">
+                        <span class="film-godina">1982</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Maratonci trče počasni krug</h3>
+                        <p class="film-reziser">Režija: Slobodan Šijan</p>
+                        <p class="film-opis">Porodica Topalović sprema se da proslavi smrt svog oca, ali otkriva da je on samo u komi. Komična drama o pohlepi, porodičnim odnosima i apsurdima života u socijalizmu.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Crna komedija</span>
+                            <span class="film-tag">Porodični</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/balkanski_spijun2.jpg');filter: invert(100%);">
+                        <span class="film-godina">1984</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Balkanski špijun</h3>
+                        <p class="film-reziser">Režija: Dušan Kovačević</p>
+                        <p class="film-opis">Život običnog čoveka pretvoren je u haos kada postane žrtva paranoje svog komšije koji ga optužuje za špijunažu. Satirični prikaz društva pod režimom.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Satira</span>
+                            <span class="film-tag">Drama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- DRAMA -->
+        <section class="zanr" id="drama">
+            <div class="zanr-naslov">
+                <div class="zanr-ikona">
+                    <img src="slike/drama.JPG" alt="drama" id="drama_ikonica">
+                </div>
+                <h2>Drama</h2>
+            </div>
+            
+            <div class="filmovi-kontejner">
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/podzemlje2.jpg');filter: saturate(400%);">
+                        <span class="film-godina">1995</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Podzemlje</h3>
+                        <p class="film-reziser">Režija: Emir Kusturica</p>
+                        <p class="film-opis">Epska priča koja prati životne putove dvojice prijatelja kroz ratove i političke promene u Jugoslaviji od Drugog svetskog rata do raspada zemlje. Dobitnik Zlatne palme u Kanu.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Istorijski</span>
+                            <span class="film-tag">Ratni</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/otac_na.jpg');filter: brightness(200%);">
+                        <span class="film-godina">1985</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Otac na službenom putu</h3>
+                        <p class="film-reziser">Režija: Emir Kusturica</p>
+                        <p class="film-opis">Upozorenje o životu u komunističkoj Jugoslaviji 1950-ih, priča prati porodicu čiji otac nestaje tokom političkih čistki. Dobitnik Zlatne palme u Kanu.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Istorijski</span>
+                            <span class="film-tag">Porodični</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/lepa-sela-lepo-gore2.jpg');filter: sepia(500%);">
+                        <span class="film-godina">1996</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Lepa sela lepo gore</h3>
+                        <p class="film-reziser">Režija: Srđan Dragojević</p>
+                        <p class="film-opis">Rat u Bosni kroz prizmu dvojice bivših prijatelja koji se nalaze na suprotnim stranama. Snažna drama o besmislu rata i ljudskim tragedijama.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Ratni</span>
+                            <span class="film-tag">Drama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AKCIJA -->
+        <section class="zanr" id="akcija">
+            <div class="zanr-naslov">
+                <div class="zanr-ikona">
+                    <img src="slike/akcija.JPG" alt="akcija" id="akcija_ikonica">
+                </div>
+                <h2>Akcija</h2>
+            </div>
+            
+            <div class="filmovi-kontejner">
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/valter.jpg');filter:hue-rotate(300%);">
+                        <span class="film-godina">1972</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Valter brani Sarajevo</h3>
+                        <p class="film-reziser">Režija: Hajrudin Krvavac</p>
+                        <p class="film-opis">Partizanski ratni film smješten u Sarajevu tokom Drugog svetskog rata. Valter, misteriozni heroj otpora, vodi borbu protiv nacista koji pokušavaju otkriti njegov identitet.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Ratni</span>
+                            <span class="film-tag">Partizanski</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/neretva.jpg');filter:grayscale(50%)">
+                        <span class="film-godina">1969</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Bitka na Neretvi</h3>
+                        <p class="film-reziser">Režija: Veljko Bulajić</p>
+                        <p class="film-opis">Epski ratni film koji rekonstruiše jednu od najvažnijih bitaka Drugog svetskog rata na jugoslovenskom tlu. Partizani se bore protiv kombinovanih snaga Osovine.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Ratni</span>
+                            <span class="film-tag">Epski</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="film-kartica">
+                    <div class="film-slika" style="background-image: url('slike/sutjeska.jpg');filter:grayscale(100%)">
+                        <span class="film-godina">1973</span>
+                    </div>
+                    <div class="film-info">
+                        <h3>Sutjeska</h3>
+                        <p class="film-reziser">Režija: Stipe Delić</p>
+                        <p class="film-opis">Film o jednoj od najtežih bitaka u narodnooslobodilačkoj borbi, u kojoj je Tito ranjen. Richard Burton glumi Tita u međunarodnoj koprodukciji.</p>
+                        <div class="film-tagovi">
+                            <span class="film-tag">Ratni</span>
+                            <span class="film-tag">Istorijski</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="futer">
+        <div class="autorska-prava">
+            <p>&copy; 2023 KinoIstorija - Sva prava zadržana</p>
+        </div>
+    </footer>
+     <script src="skriptaFilmovi.js"></script>
+</body>
+</html>
