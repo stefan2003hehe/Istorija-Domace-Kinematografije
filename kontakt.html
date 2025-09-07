@@ -1,101 +1,149 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" vocab="https://schema.org/" prefix="org: https://www.w3.org/ns/org#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istorija Domaće Kinematografije</title>
+    <title>Kontakt - Kinoistorija | Stupite u kontakt sa nama</title>
+    <meta name="description" content="Kontaktirajte KinoIstoriju - vodeći resurs za istoriju srpske i jugoslovenske kinematografije. Pišite nam za pitanja, sugestije i saradnje.">
+    <meta name="keywords" content="KinoIstorija, kontakt, filmska istorija, srpski filmovi, jugoslovenski filmovi, pitanja o filmu, saradnja">
+    <meta name="author" content="KinoIstorija">
+    
+    <!-- Fejsbuk -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kontakt - Kinoistorija | Stupite u kontakt sa nama">
+    <meta property="og:description" content="Kontaktirajte KinoIstoriju - vodeći resurs za istoriju srpske i jugoslovenske kinematografije.">
+    <meta property="og:image" content="https://example.com/slike/og_kontakt.jpg">
+    <meta property="og:url" content="https://www.kinoistorija.com/kontakt.html">
+    
+    <!-- Tviter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kontakt - Kinoistorija | Stupite u kontakt sa nama">
+    <meta property="twitter:description" content="Kontaktirajte KinoIstoriju - vodeći resurs za istoriju srpske i jugoslovenske kinematografije.">
+    <meta property="twitter:image" content="https://example.com/slike/twitter_kontakt.jpg">
+    
+    <!-- Strukturisani podaci (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Kontakt stranica",
+      "description": "Kontaktirajte KinoIstoriju - vodeći resurs za istoriju srpske i jugoslovenske kinematografije",
+      "url": "https://www.kinoistorija.com/kontakt.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Početna",
+            "item": "https://www.kinoistorija.com/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Kontakt",
+            "item": "https://www.kinoistorija.com/kontakt.html"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "KinoIstorija",
+        "description": "Vodeći resurs za istoriju srpske i jugoslovenske kinematografije",
+        "email": "info@kinoistorija.com",
+        "url": "https://www.kinoistorija.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@kinoistorija.com",
+          "availableLanguage": ["sr", "en"]
+        }
+      }
+    }
+    </script>
     
     <link rel="stylesheet" href="stilovi.css">
-
 </head>
-<body>
+<body typeof="ContactPage" resource="#contactpage">
     <!-- ZAGLAVLJE -->
     <header class="zaglavlje">
         <div class="kontejner-zaglavlja">
             <div class="logo">
                 <div class="logo-ikona">
-                    <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan">
+                    <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan" alt="KinoIstorija logo">
                 </div>
                 <div class="logo-tekst">KinoIstorija</div>
             </div>
             
             <nav>
                 <ul class="glavni-meni">
-                    <li><a href="index.html">Početna  </a></li>
+                    <li><a href="index.html">Početna</a></li>
                     <li><a href="filmovi.html">Filmovi</a></li>
                     <li><a href="o_nama.html">O nama</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                     <li><div class="meni-pristupacnosti">
                 <button class="dugme-pristupacnosti" id="dugme-tema" title="Promeni temu">
-                    <img class="mesec-obican" id="mesec-obican" src="slike/mesec_obican.JPG">
-                    <img class="sunce-obicno" id="sunce-obicno" src="slike/sunce_obicno.JPG">
+                    <img class="mesec-obican" id="mesec-obican" src="slike/mesec_obican.JPG" alt="Tamna tema">
+                    <img class="sunce-obicno" id="sunce-obicno" src="slike/sunce_obicno.JPG" alt="Svetla tema">
                 </button>
                 <button class="dugme-pristupacnosti" id="mali-font" title="Manji font">A-</button>
                 <button class="dugme-pristupacnosti" id="srednji-font" title="Srednji font">A</button>
                 <button class="dugme-pristupacnosti" id="veliki-font" title="Veći font">A+</button>
             </div></li>
                 </ul>
-
-
-                
             </nav>
             
-            
-            
             <div class="hamburger-meni">
-                <img class="hamburger-obican" id="hamburger-obican" src="slike/hamburger_obican.JPG">
-                <img class="izlaz-obican" id="izlaz-obican" src="slike/izlaz_obican.JPG">
+                <img class="hamburger-obican" id="hamburger-obican" src="slike/hamburger_obican.JPG" alt="Meni">
+                <img class="izlaz-obican" id="izlaz-obican" src="slike/izlaz_obican.JPG" alt="Zatvori meni">
             </div>
         </div>
     </header>
 
-    
-
-   
-
     <!-- KONTAKT FORMA -->
     <section class="sekcija" id="kontakt">
         <div class="naslov-sekcije">
-            <h2>Kontaktirajte Nas</h2>
+            <h1 property="name">Kontaktirajte Nas</h1>
+            <p property="description">Imate pitanja, sugestije ili želite da saradujete sa nama? Javite nam se putem forme ispod.</p>
         </div>
         
         <div class="kontejner-forme">
-            <form id="kontakt-forma">
+            <form id="kontakt-forma" action="/posalji-poruku" method="post">
                 <div class="grupa-forme">
                     <label for="ime">Ime i prezime</label>
-                    <input type="text" id="ime" class="kontrola-forme">
+                    <input type="text" id="ime" name="ime" class="kontrola-forme" >
                     <div class="greska" id="greska-ime">Molimo unesite ime i prezime</div>
                 </div>
                 
                 <div class="grupa-forme">
                     <label for="email">Email adresa</label>
-                    <input type="email" id="email" class="kontrola-forme" >
+                    <input type="email" id="email" name="email" class="kontrola-forme">
                     <div class="greska" id="greska-email">Molimo unesite validnu email adresu</div>
                 </div>
                 
                 <div class="grupa-forme">
-                    <label for="naslov">Naslov</label>
-                    <input type="text" id="naslov" class="kontrola-forme">
+                    <label for="naslov">Naslov poruke</label>
+                    <input type="text" id="naslov" name="naslov" class="kontrola-forme">
                     <div class="greska" id="greska-naslov">Molimo unesite naslov poruke</div>
                 </div>
                 
                 <div class="grupa-forme">
                     <label for="poruka">Poruka</label>
-                    <textarea id="poruka" class="kontrola-forme" rows="5"></textarea>
+                    <textarea id="poruka" name="poruka" class="kontrola-forme" rows="5"></textarea>
                     <div class="greska" id="greska-poruka">Molimo unesite poruku</div>
                 </div>
                 
                 <button type="submit" class="dugme-za-slanje">Pošalji poruku</button>
             </form>
+            
+           
         </div>
     </section>
 
     <!-- FUTER -->
     <footer class="futer">
-      
-        
         <div class="autorska-prava">
-            <p>&copy; 2023 KinoIstorija - Sva prava zadržana</p>
+            <p>&copy; <span property="copyrightYear">2023</span> <span property="copyrightHolder">KinoIstorija</span> - Sva prava zadržana</p>
         </div>
     </footer>
 
@@ -103,3 +151,5 @@
     
 </body>
 </html>
+
+

@@ -1,27 +1,95 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" vocab="https://schema.org/" prefix="org: https://www.w3.org/ns/org#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nama - Kinoistorija</title>
+    <meta name="description" content="Saznajte više o KinoIstoriji - vodećem resursu za istoriju srpske i jugoslovenske kinematografije sa preko 500 filmova u bazi.">
+    <meta name="keywords" content="KinoIstorija, istorija filma, srpski filmovi, jugoslovenski filmovi, filmska arhiva, filmska istorija">
+    <meta name="author" content="KinoIstorija">
     
-     <link rel="stylesheet" href="stilovi.css">
-     <link rel="stylesheet" href="stiloviOnama.css">
+    <!-- Fejsbuk-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="O nama - Kinoistorija">
+    <meta property="og:description" content="Saznajte više o KinoIstoriji - vodećem resursu za istoriju srpske i jugoslovenske kinematografije.">
+    <meta property="og:image" content="https://example.com/slike/og_image.jpg">
+    
+    <!-- Tviter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="O nama - Kinoistorija">
+    <meta property="twitter:description" content="Saznajte više o KinoIstoriji - vodećem resursu za istoriju srpske i jugoslovenske kinematografije.">
+    <meta property="twitter:image" content="https://example.com/slike/twitter_image.jpg">
+    
+    <!-- Strukturisani podaci (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "#organization",
+      "name": "KinoIstorija",
+      "description": "KinoIstorija je organizacija posvećena očuvanju i promovisanju bogate istorije domaće kinematografije.",
+      "url": "https://www.kinoistorija.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.kinoistorija.com/slike/filmska_traka_dan.png"
+      },
+      "foundingDate": "2010",
+      "founder": {
+        "@type": "Person",
+        "name": "Marko Janković"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "RS"
+      },
+      "sameAs": [
+        "https://www.facebook.com/kinoistorija",
+        "https://www.instagram.com/kinoistorija",
+        "https://twitter.com/kinoistorija"
+      ],
+      "numberOfEmployees": "4",
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Marko Janković",
+          "jobTitle": "Osnivač i glavni urednik"
+        },
+        {
+          "@type": "Person",
+          "name": "Jelena Marković",
+          "jobTitle": "Glavni istraživač"
+        },
+        {
+          "@type": "Person",
+          "name": "Nikola Petrović",
+          "jobTitle": "Veb dizajner i developer"
+        },
+        {
+          "@type": "Person",
+          "name": "Milan Đorđević",
+          "jobTitle": "Koordinator saradnje"
+        }
+      ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="stilovi.css">
+    <link rel="stylesheet" href="stiloviOnama.css">
 </head>
-<body>
+<body typeof="Organization" resource="#organization">
     <!-- ZAGLAVLJE -->
     <header class="zaglavlje">
         <div class="kontejner-zaglavlja">
             <div class="logo">
                 <div class="logo-ikona">
-                    <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan">
+                    <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan" property="logo">
                 </div>
-                <div class="logo-tekst">KinoIstorija</div>
+                <div class="logo-tekst" property="name">KinoIstorija</div>
             </div>
             
             <nav>
                 <ul class="glavni-meni">
-                    <li><a href="index.html">Početna  </a></li>
+                    <li><a href="index.html">Početna</a></li>
                     <li><a href="filmovi.html">Filmovi</a></li>
                     <li><a href="o_nama.html">O nama</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
@@ -35,12 +103,7 @@
                 <button class="dugme-pristupacnosti" id="veliki-font" title="Veći font">A+</button>
             </div></li>
                 </ul>
-
-
-                
             </nav>
-            
-            
             
             <div class="hamburger-meni">
                 <img class="hamburger-obican" id="hamburger-obican" src="slike/hamburger_obican.JPG">
@@ -52,8 +115,8 @@
     <!-- NASLOV SEKCIJA -->
     <section class="naslov">
         <div class="naslov-sadrzaj">
-            <h1>O KinoIstoriji</h1>
-            <p>Naša misija je očuvanje i promovisanje bogate istorije domaće kinematografije</p>
+            <h1 property="legalName">O KinoIstoriji</h1>
+            <p property="description">Naša misija je očuvanje i promovisanje bogate istorije domaće kinematografije</p>
         </div>
     </section>
 
@@ -66,15 +129,15 @@
         <div class="kontejner-misija">
             <div class="kartica-misija">
                 <div class="ikona-misija">
-                    <img src="slike_ikonice/poceci1.JPG"  alt="poceci" id="poceci">
+                    <img src="slike_ikonice/poceci1.JPG" alt="poceci" id="poceci">
                 </div>
                 <h3>Počeci</h3>
-                <p>KinoIstorija je osnovana 2010. godine sa ciljem da očuva i promoviše bogato nasleđe srpske i jugoslovenske kinematografije. Naš tim entuzijasta počeo je kao mala grupa ljubitelja filma.</p>
+                <p property="foundingLocation" content="Srbija">KinoIstorija je osnovana <span property="foundingDate" content="2010">2010</span>. godine sa ciljem da očuva i promoviše bogato nasleđe srpske i jugoslovenske kinematografije. Naš tim entuzijasta počeo je kao mala grupa ljubitelja filma.</p>
             </div>
             
             <div class="kartica-misija">
                 <div class="ikona-misija">
-                    <img src="slike_ikonice/razvoj1.JPG"  alt="Razvoj" id="razvoj">
+                    <img src="slike_ikonice/razvoj1.JPG" alt="Razvoj" id="razvoj">
                 </div>
                 <h3>Razvoj</h3>
                 <p>Tokom godina, proširili smo svoju bazu podataka i postali vodeći resurs za istoriju domaćeg filma. Danas naša kolekcija obuhvata preko 500 filmova, 200 režisera i 1000 strana sadržaja.</p>
@@ -82,7 +145,7 @@
             
             <div class="kartica-misija">
                 <div class="ikona-misija">
-                    <img src="slike_ikonice/dostignuca1.JPG"  alt="Dostignuća" id="dostignuca">
+                    <img src="slike_ikonice/dostignuca1.JPG" alt="Dostignuća" id="dostignuca">
                 </div>
                 <h3>Dostignuća</h3>
                 <p>Naš rad je prepoznat od strane filmske zajednice, a naša baza podataka se koristi u edukativne svrhe. Saradujemo sa filmskim arhivima, festivalima i obrazovnim institucijama.</p>
@@ -99,23 +162,23 @@
         <div class="kontejner-misija">
             <div class="kartica-misija">
                 <div class="ikona-misija">
-                    <img src="slike_ikonice/misija1.JPG"  alt="misija" id="misija">
+                    <img src="slike_ikonice/misija1.JPG" alt="misija" id="misija">
                 </div>
                 <h3>Misija</h3>
-                <p>Naša misija je da očuvamo, digitalizujemo i učinimo dostupnim bogatu istoriju domaće kinematografije za sadašnje i buduće generacije, kroz edukativne programe i interaktivan sadržaj.</p>
+                <p property="mission">Naša misija je da očuvamo, digitalizujemo i učinimo dostupnim bogatu istoriju domaće kinematografije za sadašnje i buduće generacije, kroz edukativne programe i interaktivan sadržaj.</p>
             </div>
             
             <div class="kartica-misija">
                 <div class="ikona-misija">
-                    <img src="slike_ikonice/vizija1.JPG"  alt="vizija" id="vizija">
+                    <img src="slike_ikonice/vizija1.JPG" alt="vizija" id="vizija">
                 </div>
                 <h3>Vizija</h3>
-                <p>Težimo ka tome da postanemo vodeći svetski resurs za istoriju jugoslovenske i srpske kinematografije, i da inspirišemo nove generacije filmskih stvaralaca kroz upoznavanje sa bogatom filmskom tradicijom.</p>
+                <p property="slogan">Težimo ka tome da postanemo vodeći svetski resurs za istoriju jugoslovenske i srpske kinematografije, i da inspirišemo nove generacije filmskih stvaralaca kroz upoznavanje sa bogatom filmskom tradicijom.</p>
             </div>
             
             <div class="kartica-misija">
                 <div class="ikona-misija">
-                    <img src="slike_ikonice/vrednosti1.JPG"  alt="vrednosti" id="vrednosti">
+                    <img src="slike_ikonice/vrednosti1.JPG" alt="vrednosti" id="vrednosti">
                 </div>
                 <h3>Vrednosti</h3>
                 <p>Vodimo se principima tačnosti, potpunosti i pristupačnosti. Verujemo da je filmska istorija deo nacionalnog identiteta koji treba čuvati i negovati za buduće generacije.</p>
@@ -129,44 +192,40 @@
             <h2>Naš Tim</h2>
         </div>
         
-        <div class="kontejner-tima">
+        <div class="kontejner-tima" typeof="Person" resource="#marko_jankovic">
             <div class="kartica-clana">
-                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika1.jpg');"></div>
+                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika1.jpg');" property="image"></div>
                 <div class="info-clana">
-                    <h3>Marko Janković</h3>
-                    <p class="pozicija-clana">Osnivač i glavni urednik</p>
-                    <p>Filmski istoričar sa preko 15 godina iskustva u istraživanju domaće kinematografije.</p>
-                    
+                    <h3 property="name">Marko Janković</h3>
+                    <p class="pozicija-clana" property="jobTitle">Osnivač i glavni urednik</p>
+                    <p property="description">Filmski istoričar sa preko 15 godina iskustva u istraživanju domaće kinematografije.</p>
                 </div>
             </div>
             
-            <div class="kartica-clana">
-                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika2.jpg');"></div>
+            <div class="kartica-clana" typeof="Person" resource="#jelena_markovic">
+                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika2.jpg');" property="image"></div>
                 <div class="info-clana">
-                    <h3>Jelena Marković</h3>
-                    <p class="pozicija-clana">Glavni istraživač</p>
-                    <p>Specijalista za filmsku arhivistiku, autor brojnih radova o istoriji jugoslovenskog filma.</p>
-                    
+                    <h3 property="name">Jelena Marković</h3>
+                    <p class="pozicija-clana" property="jobTitle">Glavni istraživač</p>
+                    <p property="description">Specijalista za filmsku arhivistiku, autor brojnih radova o istoriji jugoslovenskog filma.</p>
                 </div>
             </div>
             
-            <div class="kartica-clana">
-                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika3.jpeg');"></div>
+            <div class="kartica-clana" typeof="Person" resource="#nikola_petrovic">
+                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika3.jpeg');" property="image"></div>
                 <div class="info-clana">
-                    <h3>Nikola Petrović</h3>
-                    <p class="pozicija-clana">Veb dizajner i developer</p>
-                    <p>Zaslužan za tehničku realizaciju projekta i korisničko iskustvo na platformi.</p>
-                    
+                    <h3 property="name">Nikola Petrović</h3>
+                    <p class="pozicija-clana" property="jobTitle">Veb dizajner i developer</p>
+                    <p property="description">Zaslužan za tehničku realizaciju projekta i korisničko iskustvo na platformi.</p>
                 </div>
             </div>
             
-            <div class="kartica-clana">
-                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika4.jpg');"></div>
+            <div class="kartica-clana" typeof="Person" resource="#milan_djordjevic">
+                <div class="slika-clana" style="background-image: url('slike/profesionalna_slika4.jpg');" property="image"></div>
                 <div class="info-clana">
-                    <h3>Milan Đorđević</h3>
-                    <p class="pozicija-clana">Koordinator saradnje</p>
-                    <p>Zadužen za partnerstvo sa filmskim arhivima, festivalima i obrazovnim institucijama.</p>
-                    
+                    <h3 property="name">Milan Đorđević</h3>
+                    <p class="pozicija-clana" property="jobTitle">Koordinator saradnje</p>
+                    <p property="description">Zadužen za partnerstvo sa filmskim arhivima, festivalima i obrazovnim institucijama.</p>
                 </div>
             </div>
         </div>
@@ -180,7 +239,7 @@
         
         <div class="kontejner-brojeva">
             <div class="kartica-broj">
-                <div class="broj">500+</div>
+                <div class="broj" property="numberOfEmployees" content="500">500+</div>
                 <p>Filmova u bazi</p>
             </div>
             
@@ -207,17 +266,12 @@
     </section>
 
     <!-- FUTER -->
-     <footer class="futer">
-      
-        
+    <footer class="futer">
         <div class="autorska-prava">
-            <p>&copy; 2023 KinoIstorija - Sva prava zadržana</p>
+            <p>&copy; <span property="copyrightYear">2023</span> <span property="copyrightHolder">KinoIstorija</span> - Sva prava zadržana</p>
         </div>
     </footer>
 
-
-    <script src="skriptaOnama.js">
-   
-    </script>
+    <script src="skriptaOnama.js"></script>
 </body>
 </html>

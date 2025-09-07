@@ -1,209 +1,374 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr-RS">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istorija Domaće Kinematografije</title>
+    <title>Istorija Domaće Kinematografije | KinoIstorija - Srpski i Jugoslovenski Film</title>
+    <meta name="description" content="Istražite bogatu istoriju srpskog i jugoslovenskog filma kroz decenije. Znamenita ostvarenja, filmski reditelji i važni događaji iz sveta kinematografije.">
+    <meta name="keywords" content="srpski film, jugoslovenski film, istorija kinematografije, domaći filmovi, filmske decenije, Avala Film, FEST, Zlatna palma, filmski festivali, istorija filma">
+    <meta name="author" content="KinoIstorija">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Fejsbuk -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kinoistorija.rs/">
+    <meta property="og:title" content="Istorija Domaće Kinematografije | KinoIstorija">
+    <meta property="og:description" content="Istražite bogatu istoriju srpskog i jugoslovenskog filma kroz decenije.">
+    <meta property="og:image" content="https://kinoistorija.rs/images/og-image.jpg">
+    <meta property="og:locale" content="sr_RS">
+    
+    <!-- Tviter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kinoistorija.rs/">
+    <meta property="twitter:title" content="Istorija Domaće Kinematografije | KinoIstorija">
+    <meta property="twitter:description" content="Istražite bogatu istoriju srpskog i jugoslovenskog filma kroz decenije.">
+    <meta property="twitter:image" content="https://kinoistorija.rs/images/twitter-image.jpg">
+    
+    
+    
+ 
+    
+    <!-- Structured Data / RDFa -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "KinoIstorija",
+      "url": "https://kinoistorija.rs/",
+      "description": "Istražite bogatu istoriju srpskog i jugoslovenskog filma kroz decenije.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://kinoistorija.rs/pretraga?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KinoIstorija",
+      "url": "https://kinoistorija.rs",
+      "logo": "https://kinoistorija.rs/slike/filmska_traka_dan.png",
+      "sameAs": [
+        "https://www.facebook.com/kinoistorija",
+        "https://www.instagram.com/kinoistorija",
+        "https://twitter.com/kinoistorija"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://kinoistorija.rs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Filmske decenije",
+          "item": "https://kinoistorija.rs/#decenije"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Znameniti filmovi",
+          "item": "https://kinoistorija.rs/#znameniti-filmovi"
+        }
+      ]
+    }
+    </script>
     
     <link rel="stylesheet" href="stilovi.css">
-    
-
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <!-- ZAGLAVLJE -->
-    <header class="zaglavlje">
+    <header class="zaglavlje" role="banner" itemprop="header">
         <div class="kontejner-zaglavlja">
-            <div class="logo">
-                <div class="logo-ikona">
-                    <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan">
-                </div>
-                <div class="logo-tekst">KinoIstorija</div>
+            <div class="logo" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                
+                    <div class="logo-ikona">
+                        <img src="slike/filmska_traka_dan.png" id="filmska_traka_dan" alt="KinoIstorija logo - filmska traka" itemprop="url">
+                    </div>
+                    <div class="logo-tekst">KinoIstorija</div>
+               
             </div>
             
-            <nav>
+            <nav role="navigation" aria-label="Glavni meni">
                 <ul class="glavni-meni">
-                    <li class="padajuci-meni"><a href="#pocetna">Početna V</a>
-                    <div class="sadrzaj-padajuceg">
+                    <li class="padajuci-meni">
+                        <a href="#pocetna">Početna</a>
+                        <div class="sadrzaj-padajuceg">
                             <a href="#decenije">Decenije</a>
                             <a href="#znameniti-filmovi">Znameniti filmovi</a>
                             <a href="#vremenska-linija">Vremenska linija</a>
-                            
-                        </div></li>
+                        </div>
+                    </li>
 
                     <li><a href="filmovi.html">Filmovi</a></li>
                     <li><a href="o_nama.html">O nama</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 
-                    <li><div class="meni-pristupacnosti">
-                <button class="dugme-pristupacnosti" id="dugme-tema" title="Promeni temu">
-                    <img class="mesec-obican" id="mesec-obican" src="slike/mesec_obican.JPG">
-                    <img class="sunce-obicno" id="sunce-obicno" src="slike/sunce_obicno.JPG">
-                </button>
-                <button class="dugme-pristupacnosti" id="mali-font" title="Manji font">A-</button>
-                <button class="dugme-pristupacnosti" id="srednji-font" title="Srednji font">A</button>
-                <button class="dugme-pristupacnosti" id="veliki-font" title="Veći font">A+</button>
-            </div></li>
+                    <li>
+                        <div class="meni-pristupacnosti" aria-label="Podešavanja pristupačnosti">
+                            <button class="dugme-pristupacnosti" id="dugme-tema" title="Promeni temu" aria-label="Promeni između tamne i svetle teme">
+                                <img class="mesec-obican" id="mesec-obican" src="slike/mesec_obican.JPG" alt="Tamna tema">
+                                <img class="sunce-obicno" id="sunce-obicno" src="slike/sunce_obicno.JPG" alt="Svetla tema">
+                            </button>
+                            <button class="dugme-pristupacnosti" id="mali-font" title="Manji font" aria-label="Smanji veličinu fonta">A-</button>
+                            <button class="dugme-pristupacnosti" id="srednji-font" title="Srednji font" aria-label="Podrazumevana veličina fonta">A</button>
+                            <button class="dugme-pristupacnosti" id="veliki-font" title="Veći font" aria-label="Povećaj veličinu fonta">A+</button>
+                        </div>
+                    </li>
                 </ul>
-
-
-                
             </nav>
             
-            
-            
-            <div class="hamburger-meni">
-                
-                <img class="hamburger-obican" id="hamburger-obican" src="slike/hamburger_obican.JPG">
-                <img class="izlaz-obican" id="izlaz-obican" src="slike/izlaz_obican.JPG">
+            <div class="hamburger-meni" aria-label="Meni za mobilni prikaz">
+                <img class="hamburger-obican" id="hamburger-obican" src="slike/hamburger_obican.JPG" alt="Otvori meni">
+                <img class="izlaz-obican" id="izlaz-obican" src="slike/izlaz_obican.JPG" alt="Zatvori meni">
             </div>
         </div>
     </header>
 
     <!-- POČETNI PRIKAZ -->
-    <section class="pocetni-prikaz" id="pocetna">
+    <section class="pocetni-prikaz" id="pocetna" role="region" aria-labelledby="pocetna-naslov" itemprop="mainContentOfPage">
         <div class="sadrzaj-pocetnog">
-            <h1 class="svetleci-tekst">Istorija Domaće Kinematografije</h1>
+            <h1 class="svetleci-tekst" id="pocetna-naslov">Istorija Domaće Kinematografije</h1>
             <p>Otkrijte bogatu istoriju srpskog i jugoslovenskog filma kroz decenije, od pionirskih početaka do savremenih ostvarenja.</p>
-            
         </div>
     </section>
 
     <!-- DEKADE SEKCIJA -->
-    <section class="sekcija" id="decenije">
+    <section class="sekcija" id="decenije" role="region" aria-labelledby="decenije-naslov">
         <div class="naslov-sekcije">
-            <h2>Filmske Decenije</h2>
+            <h2 id="decenije-naslov">Filmske Decenije</h2>
         </div>
         
-        <div class="kontejner-decenija">
-            <div class="kartica-decenije pojavljivanje">
-                <div class="slika-decenije" style="background-image: url('slike/bice-skoro-propast-sveta.jpg');"></div>
+        <div class="kontejner-decenija" itemscope itemtype="https://schema.org/ItemList">
+            <div class="kartica-decenije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/CreativeWork">
+                <div class="slika-decenije" style="background-image: url('slike/bice-skoro-propast-sveta.jpg');" aria-label="1960-1969: Scena iz filma Biće skoro propast sveta" itemprop="image"></div>
                 <div class="informacije-decenije">
-                    <h3>1960-1969</h3>
-                    <p>Zlatno doba jugoslovenskog filma sa "Crnom Gorkom", "Biće skoro propast sveta" i ostalim klasicima.</p>
+                    <h3 itemprop="name">1960-1969</h3>
+                    <p itemprop="description">Zlatno doba jugoslovenskog filma sa "Crnom Gorkom", "Biće skoro propast sveta" i ostalim klasicima.</p>
                 </div>
             </div>
             
-            <div class="kartica-decenije pojavljivanje">
-                <div class="slika-decenije" style="background-image: url('slike/ko_to_tamo.jpg');"></div>
+            <div class="kartica-decenije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/CreativeWork">
+                <div class="slika-decenije" style="background-image: url('slike/ko_to_tamo.jpg');" aria-label="1970-1979: Scena iz filma Ko to tamo peva" itemprop="image"></div>
                 <div class="informacije-decenije">
-                    <h3>1970-1979</h3>
-                    <p>Razdoblje partizanskih filmova i komedija kao što su "Balkanski špijun" i "Ko to tamo peva".</p>
+                    <h3 itemprop="name">1970-1979</h3>
+                    <p itemprop="description">Razdoblje partizanskih filmova i komedija kao što su "Balkanski špijun" i "Ko to tamo peva".</p>
                 </div>
             </div>
             
-            <div class="kartica-decenije pojavljivanje">
-                <div class="slika-decenije" style="background-image: url('slike/podzemlje.jpg');"></div>
+            <div class="kartica-decenije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/CreativeWork">
+                <div class="slika-decenije" style="background-image: url('slike/podzemlje.jpg');" aria-label="1980-1989: Scena iz filma Podzemlje" itemprop="image"></div>
                 <div class="informacije-decenije">
-                    <h3>1980-1989</h3>
-                    <p>Modernizacija filma i nastanak autorske kinematografije sa "Underground" i "Dom za vešanje".</p>
+                    <h3 itemprop="name">1980-1989</h3>
+                    <p itemprop="description">Modernizacija filma i nastanak autorske kinematografije sa "Underground" i "Dom za vešanje".</p>
                 </div>
             </div>
             
-            <div class="kartica-decenije pojavljivanje">
-                <div class="slika-decenije" style="background-image: url('slike/lepa-sela-lepo-gore.jpg');"></div>
+            <div class="kartica-decenije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/CreativeWork">
+                <div class="slika-decenije" style="background-image: url('slike/lepa-sela-lepo-gore.jpg');" aria-label="1990-1999: Scena iz filma Lepa sela lepo gore" itemprop="image"></div>
                 <div class="informacije-decenije">
-                    <h3>1990-1999</h3>
-                    <p>Teška decenija koja je donela remek-dela poput "Lepa sela lepo gore" i "Rane".</p>
+                    <h3 itemprop="name">1990-1999</h3>
+                    <p itemprop="description">Teška decenija koja je donela remek-dela poput "Lepa sela lepo gore" i "Rane".</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SLIDER SEKCIJA -->
-    <section class="sekcija" id="znameniti-filmovi">
+    <section class="sekcija" id="znameniti-filmovi" role="region" aria-labelledby="filmovi-naslov">
         <div class="naslov-sekcije">
-            <h2>Znameniti Filmovi</h2>
+            <h2 id="filmovi-naslov">Znameniti Filmovi</h2>
         </div>
         
-        <div class="kontejner-klizaca" >
-            <div class="klizac">
-                <div class="slajd">
-                    <img src="slike/balkanski_spijun.jpg" alt="Film Balkanski Spijun">
+        <div class="kontejner-klizaca">
+            <div class="klizac" itemscope itemtype="https://schema.org/ItemList">
+                <div class="slajd" itemprop="itemListElement" itemscope itemtype="https://schema.org/Movie">
+                    <img src="slike/balkanski_spijun.jpg" alt="Balkanski špijun (1984) - glavni likovi u dramatičnoj sceni" itemprop="image">
                     <div class="opis-slajda">
-                        <h3>Balkanski špijun (1984)</h3>
-                        <p>Režija: Dušan Kovačević, Božidar Nikolić</p>
+                        <h3 itemprop="name">Balkanski špijun (1984)</h3>
+                        <p itemprop="director">Režija: Dušan Kovačević, Božidar Nikolić</p>
                     </div>
                 </div>
-                <div class="slajd">
-                    <img src="slike/maratonci.jpg" alt="Maratocni trce pocasni krug">
+                <div class="slajd" itemprop="itemListElement" itemscope itemtype="https://schema.org/Movie">
+                    <img src="slike/maratonci.jpg" alt="Maratonci trče počasni krug (1982) - scena sa glavnim glumcima" itemprop="image">
                     <div class="opis-slajda">
-                        <h3>Maratonci trče počasni krug (1982)</h3>
-                        <p>Režija: Slobodan Šijan</p>
+                        <h3 itemprop="name">Maratonci trče počasni krug (1982)</h3>
+                        <p itemprop="director">Režija: Slobodan Šijan</p>
                     </div>
                 </div>
-                <div class="slajd">
-                    <img src="slike/podzemlje.jpg" alt="Film Underground">
+                <div class="slajd" itemprop="itemListElement" itemscope itemtype="https://schema.org/Movie">
+                    <img src="slike/podzemlje.jpg" alt="Podzemlje (1995) - scena sa Emirom Kusturicom" itemprop="image">
                     <div class="opis-slajda">
-                        <h3>Podzemlje (1995)</h3>
-                        <p>Režija: Emir Kusturica</p>
+                        <h3 itemprop="name">Podzemlje (1995)</h3>
+                        <p itemprop="director">Režija: Emir Kusturica</p>
                     </div>
                 </div>
             </div>
             
             <div class="kontrole-klizaca">
-                <button class="dugme-klizaca dugme-prethodno"><p>&#8592;</p></button>
-                <button class="dugme-klizaca dugme-sledece"><p>&#8594;</p></button>
+                <button class="dugme-klizaca dugme-prethodno" aria-label="Prethodni slajd"><p>&#8592;</p></button>
+                <button class="dugme-klizaca dugme-sledece" aria-label="Sledeći slajd"><p>&#8594;</p></button>
             </div>
             
-            <div class="tackice-klizaca">
-                <div class="tackica aktivna"></div>
-                <div class="tackica"></div>
-                <div class="tackica"></div>
+            <div class="tackice-klizaca" role="tablist">
+                <div class="tackica aktivna" role="tab" aria-label="Prvi slajd" aria-selected="true"></div>
+                <div class="tackica" role="tab" aria-label="Drugi slajd" aria-selected="false"></div>
+                <div class="tackica" role="tab" aria-label="Treći slajd" aria-selected="false"></div>
             </div>
         </div>
     </section>
 
     <!-- VREMENSKA LINIJA -->
-    <section class="sekcija" id="vremenska-linija">
+    <section class="sekcija" id="vremenska-linija" role="region" aria-labelledby="vremenska-linija-naslov">
         <div class="naslov-sekcije">
-            <h2>Vremenska Linija Kinematografije</h2>
+            <h2 id="vremenska-linija-naslov">Vremenska Linija Kinematografije</h2>
         </div>
         
-        <div class="kontejner-vremenske-linije">
-            <div class="stavka-vremenske-linije pojavljivanje">
-                <div class="godina-vremenske-linije">1947</div>
+        <div class="kontejner-vremenske-linije" itemscope itemtype="https://schema.org/ItemList">
+            <div class="stavka-vremenske-linije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/Event">
+                <div class="godina-vremenske-linije" itemprop="startDate" content="1947">1947</div>
                 <div class="sadrzaj-vremenske-linije">
-                    <h3>Osnovan Avala Film</h3>
-                    <p>Prva filmska kompanija u Srbiji, koja je postala temelj domaće kinematografije.</p>
+                    <h3 itemprop="name">Osnovan Avala Film</h3>
+                    <p itemprop="description">Prva filmska kompanija u Srbiji, koja je postala temelj domaće kinematografije.</p>
                 </div>
             </div>
             
-            <div class="stavka-vremenske-linije pojavljivanje">
-                <div class="godina-vremenske-linije">1960</div>
+            <div class="stavka-vremenske-linije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/Event">
+                <div class="godina-vremenske-linije" itemprop="startDate" content="1960">1960</div>
                 <div class="sadrzaj-vremenske-linije">
-                    <h3>Zlatno doba jugoslovenskog filma</h3>
-                    <p>Početak produkcije velikih filmskih ostvarenja koja su postala deo svetske kinematografije.</p>
+                    <h3 itemprop="name">Zlatno doba jugoslovenskog filma</h3>
+                    <p itemprop="description">Početak produkcije velikih filmskih ostvarenja koja su postala deo svetske kinematografije.</p>
                 </div>
             </div>
             
-            <div class="stavka-vremenske-linije pojavljivanje">
-                <div class="godina-vremenske-linije">1971</div>
+            <div class="stavka-vremenske-linije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/Event">
+                <div class="godina-vremenske-linije" itemprop="startDate" content="1971">1971</div>
                 <div class="sadrzaj-vremenske-linije">
-                    <h3>FEST - Filmski festival u Beogradu</h3>
-                    <p>Prvi međunarodni filmski festival u Jugoslaviji koji je postao značajno kulturno događanje.</p>
+                    <h3 itemprop="name">FEST - Filmski festival u Beogradu</h3>
+                    <p itemprop="description">Prvi međunarodni filmski festival u Jugoslaviji koji je postao značajno kulturno događanje.</p>
                 </div>
             </div>
             
-            <div class="stavka-vremenske-linije pojavljivanje">
-                <div class="godina-vremenske-linije">1995</div>
+            <div class="stavka-vremenske-linije pojavljivanje" itemprop="itemListElement" itemscope itemtype="https://schema.org/Event">
+                <div class="godina-vremenske-linije" itemprop="startDate" content="1995">1995</div>
                 <div class="sadrzaj-vremenske-linije">
-                    <h3>Underground osvaja Zlatnu palmu</h3>
-                    <p>Emir Kusturica osvaja najprestižniju filmsku nagradu na festivalu u Kanu.</p>
+                    <h3 itemprop="name">Underground osvaja Zlatnu palmu</h3>
+                    <p itemprop="description">Emir Kusturica osvaja najprestižniju filmsku nagradu na festivalu u Kanu.</p>
                 </div>
             </div>
         </div>
     </section>
 
-   
-
     <!-- FUTER -->
-    <footer class="futer">
-       
+    <footer class="futer" role="contentinfo" itemprop="footer">
         <div class="autorska-prava">
             <p>&copy; 2023 KinoIstorija - Sva prava zadržana</p>
         </div>
     </footer>
 
-    <script src="skripta.js">  </script>
+    <script src="skripta.js"></script>
+    
+    <!-- Dodatni RDF zapisi za semantički veb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Filmske decenije",
+      "description": "Pregled razvoja domaće kinematografije kroz decenije",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "1960-1969",
+            "description": "Zlatno doba jugoslovenskog filma sa 'Crnom Gorkom', 'Biće skoro propast sveta' i ostalim klasicima."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "1970-1979",
+            "description": "Razdoblje partizanskih filmova i komedija kao što su 'Balkanski špijun' i 'Ko to tamo peva'."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "1980-1989",
+            "description": "Modernizacija filma i nastanak autorske kinematografije sa 'Underground' i 'Dom za vešanje'."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "1990-1999",
+            "description": "Teška decenija koja je donela remek-dela poput 'Lepa sela lepo gore' i 'Rane'."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Znameniti filmovi",
+      "description": "Najznačajnija ostvarenja domaće kinematografije",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Movie",
+            "name": "Balkanski špijun",
+            "dateCreated": "1984",
+            "director": ["Dušan Kovačević", "Božidar Nikolić"]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Movie",
+            "name": "Maratonci trče počasni krug",
+            "dateCreated": "1982",
+            "director": ["Slobodan Šijan"]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Movie",
+            "name": "Podzemlje",
+            "dateCreated": "1995",
+            "director": ["Emir Kusturica"],
+            "award": "Zlatna palma na Kanskom filmskom festivalu"
+          }
+        }
+      ]
+    }
+    </script>
 </body>
 </html>
